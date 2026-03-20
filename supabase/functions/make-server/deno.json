@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "hono": "npm:hono@^4.0.0",
+    "@supabase/supabase-js": "jsr:@supabase/supabase-js@2"
+  },
+  "tasks": {
+    "start": "deno run --allow-all index.tsx"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
+}
