@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import { viteSingleFile } from 'vite-plugin-singlefile';
 import type { Plugin } from 'vite';
 
 // Plugin: strip @version suffix from import specifiers (e.g. "sonner@2.0.3" → "sonner")
@@ -39,5 +40,9 @@ function figmaAssetPlugin(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [figmaAssetPlugin(), stripVersionedImports(), tailwindcss(), react()],
+  base: './',
+  plugins: [figmaAssetPlugin(), stripVersionedImports(), tailwindcss(), react(), viteSingleFile()],
+  build: {
+    cssCodeSplit: false,
+  },
 });
