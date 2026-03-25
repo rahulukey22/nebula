@@ -14,8 +14,8 @@
  * 5. Update brand.features to enable/disable functionality
  */
 
-// Import logo assets - Using Baskin Robbins logo
-import baskinRobbinsLogo from 'figma:asset/038cf84d94068a109f094e9ec0577e73e43418e4.png';
+// Baskin Robbins official logo (Wikimedia Commons)
+const baskinRobbinsLogo = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baskin-Robbins_logo.svg/400px-Baskin-Robbins_logo.svg.png';
 
 // Import product image assets
 import chocolateTruffleCakeImg from "figma:asset/1ba4141ae54d99789a402bc4b1f0554acfbfa96a.png";
